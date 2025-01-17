@@ -1,7 +1,7 @@
 # Final-Project-Transforming-and-Analyzing-Data-with-SQL
 
 ## Project/Goals
-(fill in your description and goals here)
+I dunno, I just need to do this to finish the bootcamp eventually...
 
 ## Process
 ### (your step 1)
