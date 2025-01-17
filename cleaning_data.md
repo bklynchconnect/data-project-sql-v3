@@ -16,6 +16,21 @@ select * from order_details where discount > 0
 
 ---
 
+Removing NULL shipregion
+Some of the shipregion values are null and we need to remove them in some queries. Here is an example of doing that:
+SELECT
+	*
+FROM
+	orders
+WHERE
+	shipregion IS NOT NULL
+	
+Keeping only high-freight orders
+We only want orders where the freight is greater than $800. Here is how we can do that:
+SELECT customerid, orderdate FROM orders WHERE freight > 800
+
+---
+
 ### Removing NULL shipregion
 Some of the shipregion values are null and we need to remove them in some queries. Here is an example of doing that:
 
