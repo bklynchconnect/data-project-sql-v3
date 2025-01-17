@@ -8,8 +8,22 @@ Queries:
 Below, provide the SQL queries you used to clean your data.
 
 
-SELECT * FROM orders WHERE shipregion IS NOT NULL
+select * from orders where shipregion is not null
 
-SELECT * FROM orders WHERE shipvia = 2
+select * FROM orders where shipvia = 2
 
-SELECT * FROM order_details WHERE discount > 0
+select * from order_details where discount > 0
+
+---
+
+### Removing NULL shipregion
+Some of the shipregion values are null and we need to remove them in some queries. Here is an example of doing that:
+
+```sql
+SELECT
+	*
+FROM
+	orders
+WHERE
+	shipregion IS NOT NULL
+```
