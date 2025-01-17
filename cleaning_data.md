@@ -27,3 +27,15 @@ FROM
 WHERE
 	shipregion IS NOT NULL
 ```
+
+### Keeping only high-freight orders
+We only want orders where the freight is greater than $800. Here is how we can do that:
+
+```sql
+SELECT customerid, orderdate FROM orders WHERE freight > 800
+```
+
+| customerid | orderdate |
+|-|-|
+| QUEEN | 1996-12-04 |
+| QUICK | 1997-05-19 |
