@@ -40,4 +40,4 @@ SELECT customerid, orderdate FROM orders WHERE freight > 800
 | QUEEN | 1996-12-04 |
 | QUICK | 1997-05-19 |
 
-![images/high_freight_orders.png]
+![high freight orders](images/high_freight_orders.png)
